@@ -1,7 +1,7 @@
 # Human Activity Recognition
 ### CMP3011 Introduction to Computer Vision
 **Adam El Kaissi (2101431) | Awais Ahmed (2281583)**
-
+**Instructor: Prof MD Imran Hosen | Submission: 17 June 2026**
 
 ---
 
@@ -116,13 +116,16 @@ python demo.py --checkpoint outputs/best_model.pth
 
 ## Results (VideoMAE on Test Videos)
 
-| Video            | True Label     | Prediction        | Confidence | Correct?  |
-|-----------------|----------------|-------------------|------------|-----------|
-| push_ups.mp4    | push up        | push up           | 66.5%      | ✓         |
-| juggling.mp4    | juggling balls | juggling balls    | 88.6%      | ✓         |
-| deadlifting.mp4 | deadlifting    | clean and jerk    | 58.2%      | ✗ (Top-4) |
-| hula_hooping.mp4| hula hooping   | jumpstyle dancing | 8.1%       | ✗ (Top-2) |
-| squats.mp4      | squat          | stretching arm    | 41.9%      | ✗         |
+| Video             | True Label     | Prediction        | Confidence | Correct?  |
+|------------------|----------------|-------------------|------------|-----------|
+| push_ups.mp4     | push up        | push up           | 66.5%      | ✓         |
+| pull_ups.mp4     | pull ups       | pull ups          | 82.8%      | ✓         |
+| juggling.mp4     | juggling balls | juggling balls    | 88.6%      | ✓         |
+| deadlifting.mp4  | deadlifting    | clean and jerk    | 58.2%      | ✗ (Top-4) |
+| hula_hooping.mp4 | hula hooping   | jumpstyle dancing | 8.1%       | ✗ (Top-2) |
+| squats.mp4       | squat          | stretching arm    | 41.9%      | ✗         |
+
+**Top-1 Accuracy: 50.0% (3/6) | Top-5 Accuracy: 66.7% (4/6)**
 
 ---
 
