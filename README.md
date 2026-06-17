@@ -1,3 +1,69 @@
+# Human Activity Recognition
+### CMP3011 Introduction to Computer Vision
+**Adam El Kaissi (2101431) | Awais Ahmed (2281583)**
+**Instructor: Prof MD Imran Hosen | Submission: 17 June 2026**
+
+---
+
+## Overview
+
+This project implements a **Human Activity Recognition (HAR)** system using two approaches:
+
+1. **VideoMAE (Primary)** — A pretrained video understanding model applied via transfer learning. No training required. This is what the report results are based on.
+2. **CNN + LSTM (Extended)** — A full training pipeline built from scratch using ResNet-50 + LSTM on HMDB51, included to demonstrate understanding of the full deep learning pipeline.
+
+---
+
+## Quick Start — VideoMAE (Recommended)
+
+No dataset or training needed. Just open the notebook in Google Colab.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AdamKaissi/human-activity-recognition/blob/main/HAR_VideoMAE_Colab.ipynb)
+
+1. Click the badge above to open in Colab
+2. Go to **Runtime → Change runtime type → T4 GPU**
+3. Run all cells — the notebook handles everything automatically
+
+**Total runtime: ~5 minutes**
+
+---
+
+## CNN + LSTM Training Pipeline
+
+### Project Structure
+har_project/
+
+├── data/
+
+│   └── hmdb51/               ← dataset goes here after download
+
+├── models/
+
+│   ├── cnn_lstm.py           ← CNN + LSTM model architecture
+
+│   └── transforms.py         ← video augmentation transforms
+
+├── utils/
+
+│   ├── dataset.py            ← HMDB51 dataset loader
+
+│   ├── trainer.py            ← training & validation loop
+
+│   └── evaluate.py           ← metrics, confusion matrix, F1-score
+
+├── train.py                  ← main training entry point
+
+├── evaluate.py               ← standalone evaluation script
+
+├── demo.py                   ← real-time webcam demo (optional)
+
+├── config.py                 ← all hyperparameters in one place
+
+├── requirements.txt
+
+└── notebooks/
+
+└── explore.ipynb         ← dataset exploration notebook
 ### 1. Install dependencies
 
 ```bash
