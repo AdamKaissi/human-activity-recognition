@@ -1,7 +1,7 @@
 # Human Activity Recognition
 ### CMP3011 Introduction to Computer Vision
 **Adam El Kaissi (2101431) | Awais Ahmed (2281583)**
-**Instructor: Prof MD Imran Hosen | Submission: 17 June 2026**
+
 
 ---
 
